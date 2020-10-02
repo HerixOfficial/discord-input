@@ -1,0 +1,11 @@
+{
+  "name": "discord-input",
+  "version": "1.0.0",
+  "description": "Get's user input through another message that is sent.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Herix",
+  "license": "ISC"
+}
