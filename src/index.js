@@ -1,1 +1,3 @@
-module.exports.double = number => number+number
+module.exports.createInput = async () => {
+    
+}
