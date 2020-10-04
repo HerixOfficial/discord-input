@@ -1,5 +1,5 @@
 # discord-input
-`discord-input` is a javascript package for your discord bot. It creates simple input prompts for users to input values or information. 
+`discord-input` is a (WIP) javascript package for your discord bot. It creates simple input prompts for users to input values or information. 
 ## Table of Contents
 1. [Install](https://github.com/HerixOfficial/discord-input#Install)
 2. [How to use](https://github.com/HerixOfficial/discord-input#how-to-use)
@@ -22,7 +22,7 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.content.startsWith() === "!input") {
-	    let authorInput = input.createInput().setTime(30000);
+	    let authorInput = input.createInput(message).setTime(30000);
 	    message.channel.send(authorInput);
     }
 })

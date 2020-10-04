@@ -1,6 +1,6 @@
 {
   "name": "discord-input",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Get's user input through another message that is sent.",
   "main": "src/index.js",
   "scripts": {
@@ -10,5 +10,17 @@
   "license": "ISC",
   "dependencies": {
     "discord.js": "^12.3.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HerixOfficial/discord-input.git"
+  },
+  "keywords": [
+    "discord"
+  ],
+  "bugs": {
+    "url": "https://github.com/HerixOfficial/discord-input/issues"
+  },
+  "homepage": "https://github.com/HerixOfficial/discord-input#readme"
 }
