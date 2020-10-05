@@ -1,21 +1,21 @@
- const Discord = require('discord.js');
+const Discord = require('discord.js');
 
- module.exports.startInput = async function (message) {
     // Time Limit
     let timeLimit = 30000;
     // this.setTime = (number); if(isNaN(number)) timeLimit = 30000; else timeLimit = number; }
-    this.setTime = function(number){
-       if(isNaN(number)) {
-          timeLimit = 30000;
+    
+   class Time {
+       constructor(message) {
+            this.message = message
        }
-       else {
-          timeLimit = number;
+       setTime(time) {
+              this.time = time
        }
-    }
+   }
+    
 
-    const inputCollector = message.channel.createMessageCollector(m => (m.author.id === message.author.id), { max: 1, time: 15000 });
-    inputCollector.on('collect', m => { return m; });
+    const inputCollector = this.message.channel.createMessageCollector(m => (m.author.id === this.message.author.id), { max: 1, time: 30000 });
+    inputCollector.on('collect', m => { return console.log(m); });
     setTimeout(() => {
-       
+       return this.message.reply('too late!');
     }, 30000);
- }
