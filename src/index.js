@@ -5,7 +5,7 @@ module.exports.createInput = function(message) {
      const inputCollector = message.channel.createMessageCollector(m => (m.author.id === message.author.id), { max: 1, time: 30000 });
      inputCollector.on('collect', m => {
          expired = false;
-         return message.channel.send(`\`\`\`${m.content}\`\`\``); 
+         return m.content; // message.channel.send(`\`\`\`${m.content}\`\`\``); 
      });
      setTimeout(() => {
         if (expired == true) {
