@@ -1,14 +1,14 @@
 const Discord = require('discord.js');
 
 module.exports.createInput = function(message) {
-    let expired = true;
+     let expired = true;
      const inputCollector = message.channel.createMessageCollector(m => (m.author.id === message.author.id), { max: 1, time: 30000 });
      inputCollector.on('collect', m => {
          expired = false;
-         return console.log(m); 
+         return message.channel.send(`\`\`\`${m.content}\`\`\``); 
      });
      setTimeout(() => {
-        if (expired = true) {
+        if (expired == true) {
             expired = false;
             return message.reply('too late!');
         }
