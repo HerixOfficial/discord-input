@@ -29,3 +29,7 @@ client.on('message', message => {
 client.login('YOUR_TOKEN')
 ```
 Now when a user does `!input` they have 30 seconds to send something, and it will send what they sent!
+
+## Todo
+- Add a time limit that can be edited (default set to 30 seconds for right now)
+- Add a input expired message that can be edited
