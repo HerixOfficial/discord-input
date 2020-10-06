@@ -33,6 +33,7 @@ Now when a user does `!input` they have 30 seconds to send something, and it wil
 
 The content return function isn't working just yet, so it is just set to do this:
 ![](https://i.imgur.com/e4fihgt.png)
+
 It soon will be set to make the `authorInput` value set to the input given.
 
 ## Todo
