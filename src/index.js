@@ -5,7 +5,7 @@ module.exports.createInput = function(message) {
     const inputCollector = message.channel.createMessageCollector(m => (m.author.id === message.author.id), { max: 1, time: 30000 });
      inputCollector.on('collect', m => {
          expired = false;
-         return messsage.channel.send(new Discord.MessageEmbed().setTitle('Your Input').setDescription(`\`\`\`${m.content}\`\`\``));
+         return message.channel.send(new Discord.MessageEmbed().setTitle('Your Input').setDescription(`\`\`\`${m.content}\`\`\``));
      });
      setTimeout(() => {
         if (expired == true) {
