@@ -22,8 +22,7 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.content.startsWith() === "!input") {
-	    let authorInput = input.createInput(message).setTime(30000);
-	    message.channel.send(authorInput);
+	    let authorInput = new input.createInput(message);
     }
 })
 client.login('YOUR_TOKEN')
@@ -33,3 +32,4 @@ Now when a user does `!input` they have 30 seconds to send something, and it wil
 ## Todo
 - Add a time limit that can be edited (default set to 30 seconds for right now)
 - Add a input expired message that can be edited
+- Add a way to be able to get a value out of the input
